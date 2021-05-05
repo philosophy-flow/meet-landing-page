@@ -54,8 +54,7 @@ h2 {
 
 /* BUTTONS */
 .btn {
-  width: 193px;
-  height: 58px;
+  padding: .89rem 1.63rem;
   border-radius: 29px;
   border: none;
   font-size: .89rem;
