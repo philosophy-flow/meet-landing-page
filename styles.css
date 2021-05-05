@@ -1,0 +1,78 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* COLORS */
+:root {
+  --green-color: #4D96A9;
+  --blue-color: #8FE3F9;
+  --dark-purple-color: #855FB1;
+  --light-purple-color: #D9B8FF;
+  --dark-color: #28283D;
+  --light-color: #FAFAFA;
+  --grey-color: #87879D;
+}
+
+
+
+/* TYPOGRAPHY + BG COLOR */
+html {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 18px;
+  font-weight: 500; /* MEDIUM */
+  background-color: var(--light-color);
+}
+
+h1 {
+  font-size: 3.56rem;
+  font-weight: 900; /* BLACK */
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 900; /* BLACK */
+}
+
+.overline {
+  font-size: .89rem;
+  letter-spacing: .222rem;
+  text-transform: uppercase;
+  color: var(--green-color);
+}
+
+
+
+/* BUTTONS */
+.btn {
+  width: 193px;
+  height: 58px;
+  border-radius: 29px;
+  border: none;
+  font-size: .89rem;
+  font-weight: 900;
+  line-height: 26px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-1 {background-color: var(--green-color);}
+.btn-1 > .version-txt {color: var(--blue-color);}
+
+.btn-2 {background-color: var(--dark-purple-color);}
+.btn-2 > .version-txt {color: var(--light-purple-color);}
+
+/* no hover on mobile */
+@media (hover: hover) {
+  .btn-1:hover {background-color: #71C0D4}
+  .btn-2:hover {background-color: #B18BDD}
+}
