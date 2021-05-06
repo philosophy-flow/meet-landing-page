@@ -224,7 +224,7 @@ h1, h2 {font-weight: 900; /* BLACK */}
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 428px;
+  height: 26.75rem;
 
   background-color: var(--green-color);
   position: relative;
@@ -241,8 +241,8 @@ h1, h2 {font-weight: 900; /* BLACK */}
 
   display: block;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
 
   width: 100%;
   height: 100%;
@@ -251,11 +251,11 @@ h1, h2 {font-weight: 900; /* BLACK */}
 }
 
 .cta-text {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   text-align: center;
   font-size: 2rem;
   width: 90%;
-  max-width: 332px;
+  max-width: 20.75rem;
   color: #fff;
 }
 
@@ -265,7 +265,7 @@ h1, h2 {font-weight: 900; /* BLACK */}
   font-size: 1rem;
   line-height: 1.625rem;
   width: 80%;
-  max-width: 542px;
+  max-width: 33.875rem;
   color: #fff;
 }
 
