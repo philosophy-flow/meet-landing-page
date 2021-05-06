@@ -71,6 +71,8 @@ h1, h2 {font-weight: 900; /* BLACK */}
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 4.1875rem;
+  z-index: 5;
+  position: relative;
 }
 
 .divider-line {
@@ -85,7 +87,8 @@ h1, h2 {font-weight: 900; /* BLACK */}
   height: 3.5rem;
   width: 3.5rem;
   border-radius: 50%;
-  border: .0625rem solid rgba(135, 135, 157, 0.25); /* grey color @ .25 opacity */
+  border: .0625rem solid rgba(135, 135, 157, 0.25);
+  background-color: var(--light-color);
 
   display: flex;
   justify-content: center;
@@ -99,8 +102,10 @@ h1, h2 {font-weight: 900; /* BLACK */}
 }
 
 
+
 /* ------------------------------------------------------------------- */
 /* ------------------------------------------------------------------- */
+
 
 
 /* LOGO & BANNER */
@@ -119,7 +124,6 @@ h1, h2 {font-weight: 900; /* BLACK */}
     "left-banner-container right-banner-container"
     "center-banner-container center-banner-container";
 }
-
 .left-banner-container {grid-area: left-banner-container;}
 .right-banner-container {grid-area: right-banner-container;}
 .center-banner-container {grid-area: center-banner-container;}
@@ -162,7 +166,6 @@ h1, h2 {font-weight: 900; /* BLACK */}
 
 
 /* MAIN CONTENT */
-
 .main-container {}
 
 .main-image-container {
@@ -198,6 +201,7 @@ h1, h2 {font-weight: 900; /* BLACK */}
 
 .main-text {
   font-size: 2rem;
+  width: 90%;
   max-width: 22rem;
   margin: 0 auto;
   margin-top: 1.5rem;
@@ -210,6 +214,61 @@ h1, h2 {font-weight: 900; /* BLACK */}
   line-height: 1.625rem;
 }
 
+
+
+/* CALL TO ACTION */
+.call-to-action-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 428px;
+
+  background-color: var(--green-color);
+  position: relative;
+  z-index: 1;
+
+  margin-top: -5.9375rem;
+}
+
+.call-to-action-container::after {
+  content: "";
+  background-image: url("./assets/mobile/image-footer.jpg");
+  background-position: top 0;
+  background-size: cover;
+
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  width: 100%;
+  height: 100%;
+  opacity: .1;
+  z-index: -1;
+}
+
+.cta-text {
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 2rem;
+  width: 90%;
+  max-width: 332px;
+  color: #fff;
+}
+
+.cta-sub-text {
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  width: 80%;
+  max-width: 542px;
+  color: #fff;
+}
+
+.cta-btn {
+}
 
 
 
