@@ -176,6 +176,7 @@ h1, h2 {font-weight: 900; /* BLACK */}
 
 .main-image {
   width: 40%;
+  height: auto;
   border-radius: .5rem;
   margin: .78125rem;
 }
