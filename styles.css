@@ -131,8 +131,6 @@ h1, h2 {font-weight: 900; /* BLACK */}
 .right-banner-container {grid-area: right-banner-container;}
 .center-banner-container {grid-area: center-banner-container;}
 
-
-
 .banner-img {
   width: 100%;
 }
@@ -144,7 +142,7 @@ h1, h2 {font-weight: 900; /* BLACK */}
   margin: 0 auto;
 }
 
-.banner-main-text {
+.banner-text {
   font-size: 2.5rem;
   max-width: 17.625rem;
   margin: 0 auto;
@@ -169,6 +167,24 @@ h1, h2 {font-weight: 900; /* BLACK */}
 }
 
 
+
+/* MAIN CONTENT */
+
+.main-container {}
+
+.main-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-image {
+  width: 40%;
+  border-radius: 8px;
+  margin: 12.5px;
+}
+
+.main-text-container {}
 
 
 
