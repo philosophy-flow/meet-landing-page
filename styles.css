@@ -28,23 +28,15 @@
 /* TYPOGRAPHY + BG COLOR */
 html {
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500; /* MEDIUM */
   background-color: var(--light-color);
 }
 
-h1 {
-  font-size: 3.56rem;
-  font-weight: 900; /* BLACK */
-}
-
-h2 {
-  font-size: 2.2rem;
-  font-weight: 900; /* BLACK */
-}
+h1, h2 {font-weight: 900; /* BLACK */}
 
 .overline {
-  font-size: .89rem;
+  font-size: 1rem;
   letter-spacing: .222rem;
   text-transform: uppercase;
   color: var(--green-color);
@@ -84,55 +76,61 @@ h2 {
 
 /* LOGO & BANNER */
 .logo-container {
-  margin: 4.44rem 0;
   text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3.375rem;
 }
 
 .banner-container {
-  /* border: 1px solid red; */
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(min-content, max-content);
+  gap: 3rem 0;
+  grid-template-areas:
+    "left-banner-container right-banner-container"
+    "center-banner-container center-banner-container";
 }
 
-.left-banner-container, .right-banner-container {
-  width: 30%;
-}
+.left-banner-container {grid-area: left-banner-container;}
+.right-banner-container {grid-area: right-banner-container;}
+.center-banner-container {grid-area: center-banner-container;}
 
-.left-banner-container {
-  text-align: left;
-}
 
-.right-banner-container {
-  text-align: right;
-}
 
 .banner-img {
   width: 100%;
-  max-width: 394px;
 }
 
 .center-banner-container {
-  width: 40%;
   text-align: center;
+  width: 90%;
+  max-width: 28.125rem;
+  margin: 0 auto;
 }
 
 .banner-main-text {
-  padding: 0 4rem;
+  font-size: 2.5rem;
+  max-width: 17.625rem;
+  margin: 0 auto;
 }
 
 .banner-sub-text {
-  padding: 1.25rem 3rem;
+  font-size: 1rem;
+  color: var(--grey-color);
+  line-height: 1.625rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-.banner-btn {
-  margin: 0 .25rem;
+.banner-btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
-
-
-
-
+.btn-1.banner-btn {
+  margin-bottom: 1rem;
+}
 
 
 
@@ -149,31 +147,7 @@ h2 {
 /* BREAKPOINTS */
 
 /* TABLET */
-@media only screen and (max-width: 1310px) {
-  .logo-container {
-    margin: 2.5rem 0;
-  }
+@media only screen and (min-width: 768px) {}
 
-  .banner-container  {
-    position: relative;
-  }
-
-  .left-banner-container {
-    width: 50%;
-    text-align: right;
-  }
-
-  .center-banner-container {
-    position: absolute;
-    top: 308px;
-  }
-
-  .right-banner-container {
-    width: 50%;
-    text-align: left;
-  }
-
-}
-
-/* MOBILE */
-@media only screen and (max-width: 375px) {}
+/* DESKTOP */
+@media only screen and (min-width: 1440px) {}
