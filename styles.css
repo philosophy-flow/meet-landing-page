@@ -180,8 +180,8 @@ h1, h2 {font-weight: 900; /* BLACK */}
 
 .main-image {
   width: 40%;
-  border-radius: 8px;
-  margin: 12.5px;
+  border-radius: .5rem;
+  margin: .78125rem;
 }
 
 .main-text-container {}
