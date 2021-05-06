@@ -172,6 +172,7 @@ h1, h2 {font-weight: 900; /* BLACK */}
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .main-image {
