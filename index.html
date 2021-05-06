@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meet</title>
   <link rel="stylesheet" href="styles.css">
+
+  <!-- smooth scroll polyfill -->
+  <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
 </head>
 
 <body>
@@ -28,7 +31,7 @@
         <button class="btn btn-1 banner-btn">
           Download <span class="version-txt">v1.34.1</span>
         </button>
-        <button class="btn btn-2 banner-btn">
+        <button class="btn btn-2 banner-btn" id="scroll-btn">
           What is it?
         </button>
       </div>
@@ -54,7 +57,7 @@
     </div>
 
     <div class="main-text-container">
-      <span class="overline">built for modern use</span>
+      <span id="scroll-target" class="overline">built for modern use</span>
       <h2 class="main-text">Smarter meetings, all in one place</h2>
       <p class="main-sub-text">Send messages, share files, show your screen, and record your meetings — all in one workspace. Control who can join with invite-only team access, data encryption, and data export.</p>
     </div>
@@ -75,24 +78,6 @@
     </button>
   </section>
 
-
-
 </body>
-
+  <script src="./script.js" charset="utf-8"></script>
 </html>
-
-
-
-<!-- <h1>Meet landing page</h1>
-<h2>Meet landing page</h2>
-<p>Meet landing page</p>
-<p class="overline">overline text here</p>
-<button class="btn btn-1">
-  Download <span class="version-txt">v1.34.1</span>
-</button>
-<button class="btn btn-2">
-  Download <span class="version-txt">v1.34.1</span>
-</button>
-<button class="btn btn-2">
-  What is it?
-</button> -->
