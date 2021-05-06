@@ -43,7 +43,7 @@ h1, h2 {font-weight: 900; /* BLACK */}
 /* BUTTONS */
 .btn {
   padding: .89rem 1.63rem;
-  border-radius: 29px;
+  border-radius: 1.8125rem;
   border: none;
   font-size: .89rem;
   font-weight: 900;
@@ -59,7 +59,7 @@ h1, h2 {font-weight: 900; /* BLACK */}
 .btn-2 {background-color: var(--dark-purple-color);}
 .btn-2 > .version-txt {color: var(--light-purple-color);}
 
-/* no hover on mobile */
+/* no hover on mobile/tablet */
 @media (hover: hover) {
   .btn-1:hover {background-color: #71C0D4}
   .btn-2:hover {background-color: #B18BDD}
@@ -279,8 +279,6 @@ h1, h2 {font-weight: 900; /* BLACK */}
 /* BREAKPOINTS */
 
 /* TABLET */
-
-
 @media only screen and (min-width: 768px) {
   /* DIVIDER */
   .divider-container {
@@ -349,5 +347,64 @@ h1, h2 {font-weight: 900; /* BLACK */}
   }
 }
 
+
+
 /* DESKTOP */
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1100px) {
+  /* DIVIDER */
+  .divider-container {
+    margin-top: 6.875rem;
+  }
+
+
+  /* LOGO & BANNER */
+  .logo-container {
+    margin-top: 5rem;
+    margin-bottom: 6.75rem;
+  }
+
+  .banner-container {
+    display: flex;
+  }
+
+  .banner-text {
+    font-size: 4rem;
+    max-width: 28rem;
+  }
+
+  .banner-sub-text {
+    font-size: 1.125rem;
+    margin-top: 2.125rem;
+  }
+
+
+  /* MAIN CONTENT */
+  .overline {
+    margin-top: 5rem;
+  }
+
+
+  /* CALL TO ACTION */
+  .call-to-action-container {
+    height: 19.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .call-to-action-container::after {
+    background-image: url("./assets/desktop/image-footer.jpg");
+  }
+
+  .cta-text {
+    margin-bottom: 0rem;
+    text-align: left;
+  }
+
+  .cta-sub-text {
+    margin-bottom: 0rem;
+    max-width: 21.875rem;
+    text-align: left;
+  }
+
+}
